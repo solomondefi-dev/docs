@@ -58,7 +58,7 @@ const Home = defineAsyncComponent(() => import('vitepress/dist/client/theme-defa
 const NoopComponent = () => null
 
 const AlgoliaSearchBox = __ALGOLIA__ ? defineAsyncComponent(
-  () => import('vitepress/dist/client/theme-default/AlgoliaSearchBox.vue')
+  () => import('vitepress/dist/client/theme-default/components/AlgoliaSearchBox.vue')
 ) : NoopComponent
 
 // generic state
