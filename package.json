@@ -1,0 +1,31 @@
+{
+  "name": "@solomon/docs",
+  "version": "0.1.0",
+  "description": "Solomon Plugin and Smart Contract Documentation",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solomondefi/docs.git"
+  },
+  "keywords": [
+    "solomon",
+    "defi",
+    "decom",
+    "documentation",
+    "docs"
+  ],
+  "author": "Solomon Defi",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/solomondefi/docs/issues"
+  },
+  "homepage": "https://github.com/solomondefi/docs#readme",
+  "devDependencies": {
+    "vitepress": "^0.12.2"
+  }
+}
