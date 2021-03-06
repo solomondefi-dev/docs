@@ -22,5 +22,5 @@ It is recommended to download the distribution and copy `plugin.min.js` into you
 
 For testing and prototyping, you can include it from the Unpkg CDN:
 ```
-<script src="https://unpkg.com/@solomondefi/@0.1.0/dist/plugin.min.js>
+<script src="https://unpkg.com/@solomondefi/plugin@0.1.0/dist/plugin.min.js>
 ```

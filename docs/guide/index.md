@@ -23,9 +23,14 @@ project documentation, or check out helpful links below, organized by project ty
 
 ## Sites
 
-Our marketing and presale sites are also open source:
+Our documentation, marketing and presale sites are also open source:
 
 - Repositories
+  - https://github.com/solomondefi/docs
+    - Documentation site: https://solomondefi.github.io/docs
   - https://github.com/solomondefi/landing-page
+    - Marketing landing page: https://solomondefi.com
   - https://github.com/solomondefi/presale-site
+    - Deprecated (sale over)
   - https://github.com/solomondefi/splash
+    - Deprecated (replaced by landing page)
