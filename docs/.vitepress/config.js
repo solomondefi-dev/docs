@@ -1,10 +1,12 @@
 
+const base = '/docs'
+
 module.exports = {
   title: 'Solomon Documentation',
   description: 'Solomon Plugin and Smart Contract Documentation',
   repo: 'solomondefi/docs',
-  base: '/docs/',
-  head: [['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]],
+  base,
+  head: [['link', { rel: 'icon', type: 'image/png', href: `${base}favicon.png` }]],
 
   themeConfig: {
     logo: '/images/header_logo.png',

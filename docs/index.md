@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/ic_logo_white.png
+heroImage: ./images/ic_logo_white.png
 actionText: Get Started
 actionLink: /guide/
 
