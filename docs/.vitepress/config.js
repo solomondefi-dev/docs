@@ -1,5 +1,5 @@
 
-const base = '/docs'
+const base = '/docs/'
 
 module.exports = {
   title: 'Solomon Documentation',
@@ -9,7 +9,7 @@ module.exports = {
   head: [['link', { rel: 'icon', type: 'image/png', href: `${base}favicon.png` }]],
 
   themeConfig: {
-    logo: '/images/header_logo.png',
+    logo: '../images/header_logo.png',
     nav: [
       { text: 'Guide', link: '/guide/' },
       { text: 'Plugin', link: '/plugin/' },
