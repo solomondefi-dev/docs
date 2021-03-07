@@ -5,53 +5,53 @@ All Solomon smart contracts are contained in the monorepo https://github.com/sol
 ### Solomon Contract Factory
 
 - Package name: `@solomondefi/contract-factory`
-- Source: https://github.com/solomondefi/tree/main/slm-factory/
+- Source: https://github.com/solomondefi/slm-contracts/blob/main/contracts/SlmFactory.sol
 - Contracts:
   - `SlmFactory.sol`
 
-A contract factory for producing chargeback, presale, and escrow contracts with low gas cost. Depends on `SlmChargeback`, `SlmPresale`,
+A contract factory for producing chargeback, preorder, and escrow contracts with low gas cost. Depends on `SlmChargeback`, `SlmPreorder`,
 `SlmEscrow`, and `SlmJudgement`.
 
 ### Solomon Contract Library
 
-Library contracts with helper methods for chargeback, presale, and escrow related functionality.
+Library contracts with helper methods for chargeback, preorder, and escrow related functionality.
 
 - Package name: `@solomondefi/contract-library`
-- Source: https://github.com/solomondefi/tree/main/slm-lib/
+- Source: https://github.com/solomondefi/slm-contracts/tree/main/library
 - Contracts:
   - `SlmPurchaseUtil.sol`
       - Utility functions common to purchase contracts
   - `SlmJudgement.sol`
       - Mediates purchase disputes
   - `SlmStaking.sol`
-      - Provites a mechanism for staking SLM, and distributes purchase fees to stakers
+      - Provides a mechanism for staking SLM, and distributes purchase fees to stakers
 
-### Solomon Chargebacks
+### Solomon Chargeback
 
 Purchase/Chargeback contract that provides buyer protection for traditional ecommerce purchases.
 
 - Package name: `@solomondefi/contract-chargebacks`
-- Source: https://github.com/solomondefi/tree/main/slm-chargebacks/
+- Source: https://github.com/solomondefi/slm-contracts/blob/main/contracts/SlmChargeback.sol
 - Contracts:
   - `SlmChargebacks.sol`
       - Chargeback functionality for ecommerce purchases
 
-### Solomon Presale
+### Solomon Preorder
 
-Presale contract that can also be used for crowdfunding.
+Preorder contract that can also be used for crowdfunding.
 
-- Package name: `@solomondefi/contract-presale`
-- Source: https://github.com/solomondefi/tree/main/slm-presale/
+- Package name: `@solomondefi/contract-preorder`
+- Source: https://github.com/solomondefi/slm-contracts/blob/main/contracts/SlmPreorder.sol
 - Contracts:
-  - `SlmPresale.sol`
-      - Presale functionality for ecommerce, crowdfunding, etc
+  - `SlmPreorder.sol`
+      - Preorder functionality for ecommerce, crowdfunding, etc
 
 ### Solomon Escrow
 
 Escrow contract for large transactions with strict requirements.
 
 - Package name: `@solomondefi/contract-escrow`
-- Source: https://github.com/solomondefi/tree/main/slm-escrow/
+- Source: https://github.com/solomondefi/slm-contracts/blob/main/contracts/SlmEscrow.sol
 - Contracts:
   - `SlmEscrow.sol`
       - Escrow functionality for personal and B2B transactions

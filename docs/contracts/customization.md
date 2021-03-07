@@ -1,6 +1,6 @@
 # Customization
 
-Solomon Chargebacks, Presale, and Escrow contracts can be customized by passing in options to the factory constructor. Normally this is
+Solomon Chargebacks, Preorder, and Escrow contracts can be customized by passing in options to the factory constructor. Normally this is
 handled directly by the frontend plugin, but apps with e.g. existing backend shopping functionality can integrate directly with the
 blockchain.
 
