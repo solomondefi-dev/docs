@@ -23,6 +23,10 @@ module.exports = {
             link: 'https://solomondefi.com/',
           },
           {
+            text: 'Github',
+            link: 'https://github.com/solomondefi'
+          },
+          {
             text: 'Telegram',
             link: 'https://t.me/solomondefiproject',
           },

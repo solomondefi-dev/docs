@@ -17,8 +17,8 @@ features:
   - title: 🔌 Third Party Plugins
     details: Integrate easily with existing shopping platforms
   - title: 💰 Smart contract suite
-    details: thereum contracts for escrow, preorders, and buyer protection
+    details: Ethereum contracts for escrow, preorders, and buyer protection
   - title: 📖 Open Source
-    details: Solomon is committed to transparentl development
+    details: Solomon is committed to transparent development
 footer: GPLv2 Licensed | Copyright © 2021-present Solomon Defi
 ---
