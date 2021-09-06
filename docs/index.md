@@ -20,5 +20,5 @@ features:
     details: Ethereum contracts for escrow, preorders, and buyer protection
   - title: 📖 Open Source
     details: Solomon is committed to transparent development
-footer: GPLv2 Licensed | Copyright © 2021-present Solomon Defi
+footer: GPLv3 Licensed | Copyright © 2021-present Solomon Defi
 ---
