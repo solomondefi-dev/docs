@@ -1,18 +1,24 @@
 <template>
   <a
     class="nav-bar-title"
-    :href="$withBase($localePath)"
-    :aria-label="`${$siteByRoute.title}, back to home`"
+    :href="withBase(localePath)"
+    :aria-label="`${title}, back to home`"
   >
     <img
-      v-if="$themeConfig.logo"
+      v-if="theme.logo"
       class="logo"
-      :src="$withBase($themeConfig.logo)"
+      :src="withBase(theme.logo)"
       alt="Logo"
     />
-    {{ $site.navTitle }}
+    {{ site.navTitle }}
   </a>
 </template>
+
+<script lang="ts" setup>
+import { withBase, useData } from 'vitepress'
+
+const { localePath, theme, title, site } = useData()
+</script>
 
 <style scoped>
 .nav-bar-title {

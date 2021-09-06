@@ -43,9 +43,7 @@
 import { ref, computed, watch, defineAsyncComponent } from 'vue'
 import {
   useRoute,
-  useSiteData,
-  usePageData,
-  useSiteDataByRoute
+  useData,
 } from 'vitepress'
 import { isSideBarEmpty, getSideBarConfig } from 'vitepress/dist/client/theme-default/support/sideBar'
 import type { DefaultTheme } from 'vitepress/dist/client/theme-default/config'
@@ -63,38 +61,31 @@ const AlgoliaSearchBox = __ALGOLIA__ ? defineAsyncComponent(
 
 // generic state
 const route = useRoute()
-const siteData = useSiteData<DefaultTheme.Config>()
-const siteRouteData = useSiteDataByRoute()
-const theme = computed(() => siteData.value.themeConfig)
-const page = usePageData()
+const { site: siteRouteData, page, theme, title, frontmatter } = useData()
 // custom layout
 const isCustomLayout = computed(() => !!route.data.frontmatter.customLayout)
 // home
 const enableHome = computed(() => !!route.data.frontmatter.home)
 // navbar
 const showNavbar = computed(() => {
-  const { themeConfig } = siteRouteData.value
-  const { frontmatter } = route.data
-  if (frontmatter.navbar === false || themeConfig.navbar === false) {
+  if (frontmatter.value.navbar === false || theme.value.navbar === false) {
     return false
   }
   return (
-    siteData.value.title ||
-    themeConfig.logo ||
-    themeConfig.repo ||
-    themeConfig.nav
+    title.value ||
+    theme.value.logo ||
+    theme.value.repo ||
+    theme.value.nav
   )
 })
 // sidebar
 const openSideBar = ref(false)
 const showSidebar = computed(() => {
-  const { frontmatter } = route.data
-  if (frontmatter.home || frontmatter.sidebar === false) {
+  if (frontmatter.value.home || frontmatter.value.sidebar === false) {
     return false
   }
-  const { themeConfig } = siteRouteData.value
   return !isSideBarEmpty(
-    getSideBarConfig(themeConfig.sidebar, route.data.relativePath)
+    getSideBarConfig(theme.value.sidebar, route.data.relativePath)
   )
 })
 const toggleSidebar = (to?: boolean) => {

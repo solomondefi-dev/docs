@@ -15,11 +15,10 @@
 </template>
 
 <script setup lang="ts">
-import { defineEmit } from 'vue'
 import NavBarTitle from './NavBarTitle.vue'
 import NavLinks from 'vitepress/dist/client/theme-default/components/NavLinks.vue'
 import ToggleSideBarButton from 'vitepress/dist/client/theme-default/components/ToggleSideBarButton.vue'
-defineEmit(['toggle'])
+defineEmits(['toggle'])
 </script>
 
 <style scoped>
